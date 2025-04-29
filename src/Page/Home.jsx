@@ -1,8 +1,11 @@
 import React from 'react'
+import Container from './componants/Container'
+import Flex from './componants/Flex'
+import Image from './componants/Image'
 
 const Home = () => {
   return (
-    <div>Home</div>
+   <Image/>
   )
 }
 
