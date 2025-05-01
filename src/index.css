@@ -1,4 +1,7 @@
 @import "tailwindcss";
 @theme {
     --container-container: 1600px; 
+    --font-DM: "DM Sans", sans-serif; 
+    --color-frist: #767676;
+    --color-second: #262626;
   }

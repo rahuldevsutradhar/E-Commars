@@ -1,11 +1,11 @@
 import React from 'react'
-import Container from './componants/Container'
-import Flex from './componants/Flex'
-import Image from './componants/Image'
+import Navbar from './Layout/Navbar'
 
 const Home = () => {
   return (
-   <Image/>
+    <>
+     <Navbar/>
+    </>
   )
 }
 
