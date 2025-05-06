@@ -15,22 +15,24 @@ import Singup from './Singup';
 import Cart from './Page/Cart';
 import Checkout from './Page/Checkout';
 import Error from './Page/Error';
-
+import RootLayout from './Page/Layout/RootLayout';
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
-    <Route path="/" element={<Home />}></Route>
-    <Route path="/shop" element={<Shop />}></Route>
-    <Route path="/product" element={<Product />}></Route>
-    <Route path="/about" element={<About />}></Route>
-    <Route path="/contact" element={<Contact />}></Route>
-    <Route path="/login" element={<Login />}></Route>
-    <Route path="/singup" element={<Singup />}></Route>
-    <Route path="/cart" element={<Cart />}></Route>
-    <Route path="/checkout" element={<Checkout />}></Route>
-    <Route path="/*" element={<Error />}></Route>
+      <Route path="/" element={<RootLayout />}>
+        <Route path="" element={<Home />}></Route>
+        <Route path="shop" element={<Shop />}></Route>
+        <Route path="product" element={<Product />}></Route>
+        <Route path="about" element={<About />}></Route>
+        <Route path="contact" element={<Contact />}></Route>
+        <Route path="login" element={<Login />}></Route>
+        <Route path="singup" element={<Singup />}></Route>
+        <Route path="cart" element={<Cart />}></Route>
+        <Route path="checkout" element={<Checkout />}></Route>
+        <Route path="/*" element={<Error />}></Route>
+      </Route>
     </>
-    
+
   )
 );
 
