@@ -9,11 +9,16 @@ import delivary from '../assets/delivary.png'
 import refresh from '../assets/refresh.png'
 import Container from './componants/Container'
 import Flex from './componants/Flex'
+import Add from './Layout/Add'
+import { Link } from 'react-router-dom'
+import Cart from './componants/Cart'
+
 
 const Home = () => {
   return (
-    <section>
-      <Image className='w-full' src={bannar}/>
+   <>
+    <section className='mb-[140px]'>
+      <Link to='/shop'><Image className='w-full' src={bannar}/></Link>
       <Container>
         <Flex className='justify-between'>
         <Flex className='py-[30px] gap-x-4'>
@@ -31,6 +36,12 @@ const Home = () => {
         </Flex>
       </Container> 
     </section>
+    <Add/>
+    <Container>
+      <Cart/>
+      <Cart/>
+    </Container>
+   </>
   ) 
 }    
 
