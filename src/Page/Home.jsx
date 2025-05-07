@@ -20,6 +20,10 @@ import p1 from '../assets/p1.png'
 import p2 from '../assets/p2.png'
 import p3 from '../assets/p3.png'
 import p4 from '../assets/p4.png'
+import p5 from '../assets/p5.png'
+import p6 from '../assets/p6.png'
+import p7 from '../assets/p7.png'
+import p8 from '../assets/p8.png'
 import banner2 from '../assets/banner2.png'
 import Subheading from './componants/Subheading'
 
@@ -71,6 +75,17 @@ const Home = () => {
     </section>
     <section className='mb-[128px]'>
          <Link to='/shop'><Image className='w-full' src={banner2}/></Link>
+    </section>
+    <section className='mb-[118px]'>
+    <Container>
+      <Subheading text="Our Bestsellers" className='mb-[47px]'/>
+      <Flex className='flex gap-x-10'>
+      <Cart src={p5} title="Basic Crew Neck Tee" price="$44.00"/>
+      <Cart src={p6} title="Basic Crew Neck Tee" price="$44.00"/>
+      <Cart src={p7} title="Basic Crew Neck Tee" price="$44.00"/>
+      <Cart src={p8} title="Basic Crew Neck Tee" price="$44.00"/>
+      </Flex>      
+    </Container>
     </section>
    </>
   ) 
