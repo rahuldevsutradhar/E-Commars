@@ -12,6 +12,16 @@ import Flex from './componants/Flex'
 import Add from './Layout/Add'
 import { Link } from 'react-router-dom'
 import Cart from './componants/Cart'
+import product1 from '../assets/product1.jpg'
+import product2 from '../assets/product2.jpg'
+import product3 from '../assets/product3.jpg'
+import product4 from '../assets/product4.jpg'
+import p1 from '../assets/p1.png'
+import p2 from '../assets/p2.png'
+import p3 from '../assets/p3.png'
+import p4 from '../assets/p4.png'
+import banner2 from '../assets/banner2.png'
+import Subheading from './componants/Subheading'
 
 
 const Home = () => {
@@ -37,10 +47,31 @@ const Home = () => {
       </Container> 
     </section>
     <Add/>
+    <section className='mb-[118px]'>
     <Container>
-      <Cart/>
-      <Cart/>
+      <Subheading text="New Arrivals" className='mb-[47px]'/>
+      <Flex className='flex gap-x-10'>
+      <Cart src={product1} title="Basic Crew Neck Tee" price="$44.00"/>
+      <Cart src={product3} title="Basic Crew Neck Tee" price="$44.00"/>
+      <Cart src={product4} title="Basic Crew Neck Tee" price="$44.00"/>
+      <Cart src={product2} title="Basic Crew Neck Tee" price="$44.00"/>
+      </Flex>      
     </Container>
+    </section>
+    <section className='mb-[118px]'>
+    <Container>
+      <Subheading text="Our Bestsellers" className='mb-[47px]'/>
+      <Flex className='flex gap-x-10'>
+      <Cart src={p1} title="Basic Crew Neck Tee" price="$44.00"/>
+      <Cart src={p2} title="Basic Crew Neck Tee" price="$44.00"/>
+      <Cart src={p3} title="Basic Crew Neck Tee" price="$44.00"/>
+      <Cart src={p4} title="Basic Crew Neck Tee" price="$44.00"/>
+      </Flex>      
+    </Container>
+    </section>
+    <section className='mb-[128px]'>
+         <Link to='/shop'><Image className='w-full' src={banner2}/></Link>
+    </section>
    </>
   ) 
 }    
