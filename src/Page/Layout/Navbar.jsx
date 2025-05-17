@@ -4,6 +4,7 @@ import Flex from '../componants/Flex'
 import Image from '../componants/Image'
 import Logo from '../../assets/Logo.png'
 import List from '../componants/List'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
@@ -11,16 +12,20 @@ const Navbar = () => {
         <Container>
             <Flex>
                 <div className='w-4/12'>
-                    <Image src={Logo}/>
+                    <Link to ={"/"}><Image src={Logo}/></Link>
                 </div>
 
                 <div className='w-8/12'>
                     <ul className='flex gap-x-10'>
-                    <List text="Home"/>
-                    <List text="Shop"/>
-                    <List text="About"/>
-                    <List text="Contacts"/>
-                    <List text="Journal"/>
+                    <Link to={'/'}><List text="Home"/></Link>
+                    <Link to={'/shop'}><List text="Shop"/></Link>
+                    <Link to={'/About'}><List text="About"/></Link>
+                    <Link to={'/contact'}><List text="Contacts"/></Link>
+                    <Link to={'/Journal'}><List text="Journal"/></Link>
+                    
+                    
+                    
+                    
                     </ul>
                 
                 

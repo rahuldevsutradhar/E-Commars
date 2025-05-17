@@ -10,7 +10,7 @@ import Shop from './Page/Shop';
 import Product from './Page/Product';
 import About from './Page/About';
 import Contact from './Page/Contact';
-import Login from './Login';
+import Login from './Page/Login';
 import Singup from './Singup';
 import Cart from './Page/Cart';
 import Checkout from './Page/Checkout';
@@ -20,16 +20,16 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <>
       <Route path="/" element={<RootLayout />}>
-        <Route path="" element={<Home />}></Route>
-        <Route path="shop" element={<Shop />}></Route>
-        <Route path="product" element={<Product />}></Route>
-        <Route path="about" element={<About />}></Route>
-        <Route path="contact" element={<Contact />}></Route>
-        <Route path="login" element={<Login />}></Route>
-        <Route path="singup" element={<Singup />}></Route>
-        <Route path="cart" element={<Cart />}></Route>
-        <Route path="checkout" element={<Checkout />}></Route>
-        <Route path="/*" element={<Error />}></Route>
+        <Route path="" element={<Home />}/>
+        <Route path="shop" element={<Shop />}/>
+        <Route path="product" element={<Product />}/>
+        <Route path="about" element={<About />}/>
+        <Route path="contact" element={<Contact />}/>
+        <Route path="login" element={<Login />}/>
+        <Route path="singup" element={<Singup />}/>
+        <Route path="cart" element={<Cart />}/>
+        <Route path="checkout" element={<Checkout />}/>
+        <Route path="/*" element={<Error />}/>
       </Route>
     </>
 
