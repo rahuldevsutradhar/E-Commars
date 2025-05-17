@@ -15,7 +15,7 @@ import Singup from './Singup';
 import Cart from './Page/Cart';
 import Checkout from './Page/Checkout';
 import Error from './Page/Error';
-import RootLayout from './Page/Layout/RootLayout';
+import RootLayout from './Page/componants/Rootlayout';
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
