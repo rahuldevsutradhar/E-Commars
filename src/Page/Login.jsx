@@ -8,7 +8,7 @@ const Login = () => {
     <section className='my-[130px]'>
       <Container>
         <h1 className='font-bold font-DM text-second text-[64px]'>Login</h1>
-        <p className='font-normal font-DM text-frist text-sm  pt-[11px] mb-[128px]'>Home  >  Login</p>
+        <p className='font-normal font-DM text-frist text-sm  pt-[11px] mb-[128px]'>Home    Login</p>
         <p className='font-normal font-DM text-frist text-[16px] w-[644px]  pt-[11px] mb-[120px]'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the.</p>
         <h1 className='font-bold mb-[42px] font-DM text-second text-[39px]'>Returning Customer</h1>
           
