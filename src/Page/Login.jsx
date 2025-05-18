@@ -19,7 +19,7 @@ const Login = () => {
           <label htmlFor="Password" className='font-bold mb-[10px] font-DM text-second text-[16px]'>Password <br />
            <input className='border-b border-[#F0F0F0] py-4 w-[508px] mb-7' type="text" id='Password' placeholder='.........'/>
           </label> 
-          </Flex>
+          </Flex> 
 
           <Button text='Log in' className='mb-[129px]'/>
            <h1 className='font-bold font-DM text-second text-[39px] mb-[38px]'>New Customer</h1>

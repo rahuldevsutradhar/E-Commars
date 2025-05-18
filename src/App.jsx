@@ -11,7 +11,7 @@ import Product from './Page/Product';
 import About from './Page/About';
 import Contact from './Page/Contact';
 import Login from './Page/Login';
-import Singup from './Singup';
+import Singup from './Page/Singup';
 import Cart from './Page/Cart';
 import Checkout from './Page/Checkout';
 import Error from './Page/Error';
