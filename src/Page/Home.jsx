@@ -28,12 +28,11 @@ import p7 from '../assets/p7.png'
 import p8 from '../assets/p8.png'
 import banner2 from '../assets/banner2.png'
 import Subheading from './componants/Subheading'
-
-
 import "slick-carousel/slick/slick.css";
 import Slider from "react-slick";
 import SampleNextArrow from './componants/SampleNextArrow';
 import SamplePrevArrow from './componants/SamplePrevArrow'
+import BannerSlider from './componants/BannerSlider'
 const Home = () => {
   var settings = {
     infinite: true,
@@ -46,28 +45,7 @@ const Home = () => {
   return (
     <>
       <section className='mb-[140px]'>
-        <Slider {...settings}>
-            <div>
-              <Link to='/shop'><Image className='w-full' src={bannar} /></Link>
-            </div>
-            <div>
-              <Link to='/shop'><Image className='w-full' src={bannar} /></Link>
-            </div>
-            <div>
-              <Link to='/shop'><Image className='w-full' src={bannar} /></Link>
-            </div>
-            <div>
-              <Link to='/shop'><Image className='w-full' src={bannar} /></Link>
-            </div>
-          </Slider>
-
-        
-
-        
-
-
-
-        
+        <BannerSlider/>
         <Container>
           <Flex className='justify-between'>
             <Flex className='py-[30px] gap-x-4'>
@@ -115,12 +93,6 @@ const Home = () => {
               <Cart src={product2} title="Basic Crew Neck Tee" price="$44.00" />
             </div>
           </Slider>
-          {/* <Flex className='flex gap-x-10'>
-      <Cart src={product1} title="Basic Crew Neck Tee" price="$44.00"/>
-      <Cart src={product3} title="Basic Crew Neck Tee" price="$44.00"/>
-      <Cart src={product4} title="Basic Crew Neck Tee" price="$44.00"/>
-      <Cart src={product2} title="Basic Crew Neck Tee" price="$44.00"/>
-      </Flex>       */}
         </Container>
       </section>
       <section className='mb-[118px]'>
@@ -129,16 +101,16 @@ const Home = () => {
 
           <Slider {...settings}>
             <div>
-            <Cart src={p1} title="Basic Crew Neck Tee" price="$44.00" />
+              <Cart src={p1} title="Basic Crew Neck Tee" price="$44.00" />
             </div>
             <div>
-            <Cart src={p2} title="Basic Crew Neck Tee" price="$44.00" />
+              <Cart src={p2} title="Basic Crew Neck Tee" price="$44.00" />
             </div>
             <div>
-            <Cart src={p3} title="Basic Crew Neck Tee" price="$44.00" />
+              <Cart src={p3} title="Basic Crew Neck Tee" price="$44.00" />
             </div>
             <div>
-            <Cart src={p4} title="Basic Crew Neck Tee" price="$44.00" />
+              <Cart src={p4} title="Basic Crew Neck Tee" price="$44.00" />
             </div>
             <div>
               <Cart src={product1} title="Basic Crew Neck Tee" price="$44.00" />
@@ -152,7 +124,7 @@ const Home = () => {
             <div>
               <Cart src={product2} title="Basic Crew Neck Tee" price="$44.00" />
             </div>
-          </Slider>    
+          </Slider>
         </Container>
       </section>
       <section className='mb-[128px]'>
@@ -164,16 +136,16 @@ const Home = () => {
 
           <Slider {...settings}>
             <div>
-            <Cart src={p5} title="Basic Crew Neck Tee" price="$44.00" />
+              <Cart src={p5} title="Basic Crew Neck Tee" price="$44.00" />
             </div>
             <div>
-            <Cart src={p6} title="Basic Crew Neck Tee" price="$44.00" />
+              <Cart src={p6} title="Basic Crew Neck Tee" price="$44.00" />
             </div>
             <div>
-            <Cart src={p7} title="Basic Crew Neck Tee" price="$44.00" />
+              <Cart src={p7} title="Basic Crew Neck Tee" price="$44.00" />
             </div>
             <div>
-            <Cart src={p8} title="Basic Crew Neck Tee" price="$44.00" />
+              <Cart src={p8} title="Basic Crew Neck Tee" price="$44.00" />
             </div>
             <div>
               <Cart src={product1} title="Basic Crew Neck Tee" price="$44.00" />
@@ -187,7 +159,7 @@ const Home = () => {
             <div>
               <Cart src={product2} title="Basic Crew Neck Tee" price="$44.00" />
             </div>
-          </Slider>    
+          </Slider>
         </Container>
       </section>
     </>
