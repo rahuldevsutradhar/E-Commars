@@ -6,11 +6,22 @@ import Button from './componants/Button'
 import aboutimg from '../assets/aboutimg (1).png'
 import aboutimg2 from '../assets/aboutimg2.png'
 import AboutCart from './componants/AboutCart'
+import { useSelector } from 'react-redux'
 
 const About = () => {
+  let data3=useSelector((state)=>state.bread.prevValue)
+  let data2=useSelector((state)=>state.bread.aftervalue)
+  
   return (
     <section className='py-[130px]'>
       <Container>
+         <div>
+        <h1 className='font-bold font-DM text-second text-[50px] pt-[124px]'>About</h1>
+      </div>
+      <div className='flex gap-x-3'>
+        <h1 className='font-normal font-DM text-frist text-sm  pt-[11px]'>{data2}>{data3}></h1>
+        <h1 className='font-normal font-DM text-frist text-sm  pt-[11px]'>About</h1>
+      </div>
         <Flex className='justify-between py-[136px] gap-x-[40px]'>
           <div className='w-1/2 relative'>
             <Image src={aboutimg}  className='w-[49%]'/>

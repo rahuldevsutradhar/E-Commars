@@ -5,8 +5,16 @@ import Image from '../componants/Image'
 import Logo from '../../assets/Logo.png'
 import List from '../componants/List'
 import { Link } from 'react-router-dom'
+import { useDispatch, useSelector } from 'react-redux'
+import { activebutton } from '../../slices/breadcumbs'
 
 const Navbar = () => {
+    let dispatch = useDispatch();
+    
+let handleIncrement = (name) => {
+  dispatch(activebutton(name));
+}
+    
   return (
      <section className='py-[32px]'>
         <Container>
@@ -17,11 +25,11 @@ const Navbar = () => {
 
                 <div className='w-8/12'>
                     <ul className='flex gap-x-10'>
-                    <Link to={'/'}><List text="Home"/></Link>
-                    <Link to={'/shop'}><List text="Shop"/></Link>
-                    <Link to={'/About'}><List text="About"/></Link>
-                    <Link to={'/contact'}><List text="Contacts"/></Link>
-                    <Link to={'/Journal'}><List text="Journal"/></Link>
+                    <Link onClick={()=>handleIncrement("Home")} to={'/'}><List text="Home"/></Link>
+                    <Link onClick={()=>handleIncrement("Shop")} to={'/shop'}><List text="Shop"/></Link>
+                    <Link onClick={()=>handleIncrement("About")} to={'/About'}><List text="About"/></Link>
+                    <Link onClick={()=>handleIncrement("Contacts")} to={'/contact'}><List text="Contacts"/></Link>
+                    <Link onClick={()=>handleIncrement("Journal")} to={'/Journal'}><List text="Journal"/></Link>
                     
                     
                     

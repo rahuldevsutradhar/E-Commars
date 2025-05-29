@@ -1,15 +1,19 @@
 import React from 'react'
 import Container from './componants/Container'
 import Button from './componants/Button'
+import { useSelector } from 'react-redux'
 
 const Contact = () => {
+    let data=useSelector((state)=>state.bread.prevValue)
+    let data2=useSelector((state)=>state.bread.aftervalue)
+
   return (
     <section>
       <Container>
         <div className='mb-[125px]'>
            <h1 className='font-bold font-DM text-second text-[50px] pt-[124px]'>Contact</h1>
            <div className='flex gap-x-3'>
-             <h1 className='font-normal font-DM text-frist text-sm  pt-[11px]'>home</h1>
+             <h1 className='font-normal font-DM text-frist text-sm  pt-[11px]'>{data2}>{data}> </h1>
              <h1 className='font-normal font-DM text-frist text-sm  pt-[11px]'>Contact</h1>
            </div>
         </div>
