@@ -25,11 +25,11 @@ let handleIncrement = (name) => {
 
                 <div className='w-8/12'>
                     <ul className='flex gap-x-10'>
-                    <Link onClick={()=>handleIncrement("Home")} to={'/'}><List text="Home"/></Link>
+                    <Link onClick={()=>handleIncrement("home")} to={'/'}><List text="Home"/></Link>
                     <Link onClick={()=>handleIncrement("Shop")} to={'/shop'}><List text="Shop"/></Link>
-                    <Link onClick={()=>handleIncrement("About")} to={'/About'}><List text="About"/></Link>
-                    <Link onClick={()=>handleIncrement("Contacts")} to={'/contact'}><List text="Contacts"/></Link>
-                    <Link onClick={()=>handleIncrement("Journal")} to={'/Journal'}><List text="Journal"/></Link>
+                    <Link onClick={()=>handleIncrement("About")} to={'/about'}><List text="About"/></Link>
+                    <Link onClick={()=>handleIncrement("Contact")} to={'/contact'}><List text="Contact"/></Link>
+                    <Link onClick={()=>handleIncrement("Journal")} to={'/journal'}><List text="Journal"/></Link>
                     
                     
                     

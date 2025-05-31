@@ -2,6 +2,7 @@ import React from 'react'
 import Container from './componants/Container'
 import Button from './componants/Button'
 import { useSelector } from 'react-redux'
+import { Link } from 'react-router-dom'
 
 const Contact = () => {
     let data=useSelector((state)=>state.bread.prevValue)
@@ -13,7 +14,11 @@ const Contact = () => {
         <div className='mb-[125px]'>
            <h1 className='font-bold font-DM text-second text-[50px] pt-[124px]'>Contact</h1>
            <div className='flex gap-x-3'>
-             <h1 className='font-normal font-DM text-frist text-sm  pt-[11px]'>{data2}>{data}> </h1>
+            <h1 className='font-normal font-DM text-frist text-sm  pt-[11px]'>
+              <Link to={data2 === "home" ? "/" : `/${data2}`}>{data2 ? <span>{data2} &gt;</span> : null }</Link>
+              <Link to={data === "home" ? "/" : `/${data}`}>{data ? <span>{data} &gt;</span> : null }</Link>
+               
+            </h1>
              <h1 className='font-normal font-DM text-frist text-sm  pt-[11px]'>Contact</h1>
            </div>
         </div>

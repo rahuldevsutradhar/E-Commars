@@ -7,6 +7,7 @@ import aboutimg from '../assets/aboutimg (1).png'
 import aboutimg2 from '../assets/aboutimg2.png'
 import AboutCart from './componants/AboutCart'
 import { useSelector } from 'react-redux'
+import { Link } from 'react-router-dom'
 
 const About = () => {
   let data3=useSelector((state)=>state.bread.prevValue)
@@ -19,7 +20,13 @@ const About = () => {
         <h1 className='font-bold font-DM text-second text-[50px] pt-[124px]'>About</h1>
       </div>
       <div className='flex gap-x-3'>
-        <h1 className='font-normal font-DM text-frist text-sm  pt-[11px]'>{data2}>{data3}></h1>
+        <h1 className='font-normal font-DM text-frist text-sm  pt-[11px]'>
+          <Link to={data2 === "home" ? "/" : `/${data2}`}>
+          {data2 ? <span>{data2} &gt;</span> : null }</Link>
+
+          <Link to={data3 === "home" ? "/" : `/${data3}`}>
+          {data3 ? <span>{data3} &gt;</span> : null }</Link>
+        </h1>
         <h1 className='font-normal font-DM text-frist text-sm  pt-[11px]'>About</h1>
       </div>
         <Flex className='justify-between py-[136px] gap-x-[40px]'>
