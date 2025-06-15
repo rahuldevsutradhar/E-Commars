@@ -44,7 +44,8 @@ function Pagination({ itemsPerPage }) {
   return (
     <>
       <Items currentItems={currentItems} />
-      <ReactPaginate
+      <div className='my-[50px] mr-4 flex justify-between'>
+        <ReactPaginate
         breakLabel="..."
         nextLabel=""
         onPageChange={handlePageClick}
@@ -52,7 +53,11 @@ function Pagination({ itemsPerPage }) {
         pageCount={pageCount}
         previousLabel=""
         renderOnZeroPageCount={null}
+        containerClassName="flex gap-x-5"
+        pageLinkClassName="py-2 px-4 bg-black text-white"
       />
+      <h1>Products from {itemOffset+1} to {endOffset<data.length ? endOffset : data.length} of {data.length}</h1>
+      </div>
     </>
   );
 }
